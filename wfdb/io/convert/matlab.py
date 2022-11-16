@@ -94,7 +94,8 @@ def wfdb_to_mat(
 
     """
     record = rdrecord(
-        record_name, pn_dir=pn_dir, sampfrom=sampfrom, sampto=sampto
+        record_name, pn_dir=pn_dir, sampfrom=sampfrom, sampto=sampto,
+        channels=channels
     )
     record_name_out = record_name.split(os.sep)[-1].replace("-", "_") + "m"
 
